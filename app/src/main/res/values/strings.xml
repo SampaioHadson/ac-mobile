@@ -8,4 +8,17 @@
     <string name="esqueci_min">Esqueci minha senha</string>
     <string name="utilize_seu">Utilize seu e-mail e sua senha para ter acesso ao aplicativo</string>
     <string name="login">Login</string>
+    <string name="title_activity_home_test">HomeTest</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="nome_usuario">Olá, Usuário Exemplo!</string>
+    <string name="email_usuario">exemplo@gmail.com.br</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_dados_pessoais">Dados pessoais</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>

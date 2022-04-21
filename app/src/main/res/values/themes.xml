@@ -81,6 +81,14 @@
         </item>
     </style>
 
+    <style name="Theme.Brcommobileimovelparatodos.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Brcommobileimovelparatodos.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Brcommobileimovelparatodos.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 </resources>

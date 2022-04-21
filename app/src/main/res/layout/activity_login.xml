@@ -68,7 +68,7 @@
         />
 
     <TextView
-        android:id="@+id/acessar_min"
+        android:id="@+id/entrar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentLeft="true"
@@ -81,6 +81,7 @@
         android:textAppearance="@style/acessar_min"
         android:background="@drawable/rectangle_1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
