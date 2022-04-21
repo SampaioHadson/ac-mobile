@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">br.com.mobile.imovelparatodos</string>
+    <!-- strings.xml -->
+    <string name="imobiliaria">Imobiliária</string>
+    <string name="imoveispar">Imóveis para todos</string>
+    <string name="milharesde">Milhares de imóveis em \num simples click!</string>
+    <string name="acessar_min">Acessar minha conta</string>
+</resources>
