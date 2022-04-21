@@ -6,4 +6,6 @@
     <string name="milharesde">Milhares de imóveis em \num simples click!</string>
     <string name="acessar_min">Acessar minha conta</string>
     <string name="esqueci_min">Esqueci minha senha</string>
+    <string name="utilize_seu">Utilize seu e-mail e sua senha para ter acesso ao aplicativo</string>
+    <string name="login">Login</string>
 </resources>
