@@ -26,19 +26,20 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-//        val homeViewModel =
-//            ViewModelProvider(this).get(HomeViewModel::class.java)
-//
-//        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-//        val root: View = binding.root
-//
-//        val textView: TextView = binding.textHome
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
-//        return root
-        
-        return inflater?.inflate(R.layout.activity_home, null);
+        var itens = arrayOf("Do this", "Or this", "Or This", "Abc do B",
+            "Do this", "Or this", "Or This", "Abc do B",
+            "Do this", "Or this", "Or This", "Abc do B",
+            "Do this", "Or this", "Or This", "Abc do B",
+            "Do this", "Or this", "Or This", "Abc do B");
+        var view = inflater?.inflate(R.layout.activity_home, null);
+
+        var listView = view.findViewById<ListView>(R.id.mainMenuList);
+
+        var listViewAdapter =  ArrayAdapter<String>(view.context, android.R.layout.simple_list_item_1, itens);
+
+        listView.adapter = listViewAdapter;
+
+        return view;
     }
 
 
