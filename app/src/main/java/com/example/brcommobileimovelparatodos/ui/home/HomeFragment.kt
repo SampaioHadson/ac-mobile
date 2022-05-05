@@ -1,5 +1,6 @@
 package com.example.brcommobileimovelparatodos.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,8 @@ import android.widget.ListView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.brcommobileimovelparatodos.Home
+import com.example.brcommobileimovelparatodos.ItemDetailsActivity
 import com.example.brcommobileimovelparatodos.R
 import com.example.brcommobileimovelparatodos.databinding.FragmentHomeBinding
 
@@ -25,23 +28,35 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-        var itens = arrayOf("Do this", "Or this", "Or This", "Abc do B",
-            "Do this", "Or this", "Or This", "Abc do B",
-            "Do this", "Or this", "Or This", "Abc do B",
-            "Do this", "Or this", "Or This", "Abc do B",
-            "Do this", "Or this", "Or This", "Abc do B");
         var view = inflater?.inflate(R.layout.activity_home, null);
-
         var listView = view.findViewById<ListView>(R.id.mainMenuList);
 
-        var listViewAdapter =  ArrayAdapter<String>(view.context, android.R.layout.simple_list_item_1, itens);
+        var arrayListItems = setDataArrayList()
 
-        listView.adapter = listViewAdapter;
+        listView.setOnItemClickListener { adapterView, view, i, l ->
+            var intent = Intent(view.context, ItemDetailsActivity::class.java)
+            intent.putExtra("icons", arrayListItems[i].icons)
+            intent.putExtra("title", arrayListItems[i].title)
+            intent.putExtra("details", arrayListItems[i].details)
+            startActivity(intent)
+        }
+        var itemsListAdpater = ItemsListAdpater(view.context, arrayListItems)
+
+        listView.adapter = itemsListAdpater;
 
         return view;
     }
 
+    private fun setDataArrayList() : ArrayList<ItemList>{
+        var arrayList = ArrayList<ItemList>()
+
+        arrayList.add(ItemList(R.drawable.casa1, "AA", "CAS"))
+        arrayList.add(ItemList(R.drawable.casa1, "AA", "CAS"))
+        arrayList.add(ItemList(R.drawable.casa1, "AA", "CAS"))
+        arrayList.add(ItemList(R.drawable.casa1, "AA", "CAS"))
+
+        return arrayList!!
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
