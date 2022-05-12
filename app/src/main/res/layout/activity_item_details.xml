@@ -5,21 +5,146 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/item_details_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
-    <ImageView
-        android:id="@+id/item_details_image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Endereço:"
+                android:textAppearance="@style/endereco" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Endereço do imóvel"/>
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/item_details.title"
+                android:layout_width="match_parent"
+                android:text="Rua Não Infomada - 000"
+                android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/item_details.title"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/simple_line"
+                />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:text="Itens da casa:"
+                android:textAppearance="@style/endereco" />
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/item_details.items"
+                android:layout_width="match_parent"
+                android:text="3 quartos\n2 banheiros\n2 vagas"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/simple_line"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:text="Valores:"
+                android:textAppearance="@style/endereco" />
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/item_details.valores"
+                android:layout_width="match_parent"
+                android:text="Aluguel: R$ 1800,00\n Condomínio: R$ 800,00\nTotal: R$ 2600,00"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/simple_line"
+                />
+
+            <TextView
+                android:id="@+id/realizar_proposta"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Realizar uma proposta"
+                android:textAppearance="@style/acessar_min"
+                android:background="@drawable/rectangle_1" />
+
+            <TextView
+                android:id="@+id/agendar_visita"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Agendar uma visita"
+                android:textAppearance="@style/acessar_min"
+                android:background="@drawable/input_green" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/simple_line"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="12dp"
+                android:text="Sobre o imóvel:"
+                android:textAppearance="@style/endereco" />
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/item_details.sobre"
+                android:layout_width="match_parent"
+                android:text="Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
