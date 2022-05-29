@@ -21,4 +21,9 @@
     <string name="menu_dados_pessoais">Dados pessoais</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="realizar_pr">Realizar proposta de um imóvel</string>
+    <string name="realizar_pr_txt">Agora você irá realizar uma proposta, que te deixará mais perto de conseguir o imóvel. O locatário tem o prazo de até 72 horas para responde à proposta.</string>
+    <string name="agendar_pr_txt">Ao agendar uma visita, o corretor mais próximo será notificado e entrará em contato com você para confirmar a data e o horário de visita.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

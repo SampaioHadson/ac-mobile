@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/list_meu_item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/casa1" />
+
+        <TextView
+            android:id="@+id/list_meu_item_address"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Rua William Speers, 490"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/list_meu_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Casa em frente a praia"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="25dp"
+            android:justificationMode="inter_word"/>
+
+        <TextView
+            android:id="@+id/list_meu_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:text="Casa com 2 quartos"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="50dp"
+            android:justificationMode="inter_word"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="190dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="160dp"
+                android:textAppearance="@style/acessar_min"
+                android:text="Excluir"
+                android:background="@drawable/red_custom_button"
+                android:layout_height="40dp"/>
+
+            <View android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="5dp"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@drawable/green_custom_button"
+                android:textAppearance="@style/acessar_min"
+                android:text="Editar" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

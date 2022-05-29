@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProposalActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Realizar proposta de um imóvel -->
+            <TextView
+                android:id="@+id/realizar_pr"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Agendar visita"
+                android:textAppearance="@style/endereco" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:src="@drawable/ic_agendar_visita_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="@string/agendar_pr_txt"
+                android:textAppearance="@style/endereco" />
+
+            <EditText
+                android:id="@+id/sobre_proposta"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/input_outline"
+                android:gravity="center_horizontal|start"
+                android:hint="Data da visita"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textAppearance="@style/utilize_seu" />
+
+            <TextView
+                android:id="@+id/agendar_visita_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/input_green"
+                android:gravity="center"
+                android:text="Agendar visita"
+                android:textAppearance="@style/acessar_min" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
