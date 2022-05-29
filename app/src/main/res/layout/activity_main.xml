@@ -84,13 +84,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/esqueci_min"
+        android:id="@+id/quero_me_cadastrar"
         android:layout_width="match_parent"
         android:layout_height="19dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="558dp"
-        android:text="@string/esqueci_min"
+        android:text="Quero me cadastrar"
         android:textAppearance="@style/esqueci_min"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"

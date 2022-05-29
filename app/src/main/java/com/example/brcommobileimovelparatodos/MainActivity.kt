@@ -20,7 +20,12 @@ import androidx.appcompat.app.AppCompatActivity
             val intent = Intent(context, Login::class.java)
             startActivity(intent)
         }
+
+        val btnCadastro = findViewById<TextView>(R.id.quero_me_cadastrar)
+        btnCadastro.setOnClickListener{
+            val intent1 = Intent(this, RegsisterActivity::class.java)
+            startActivity(intent1)
+        }
     }
-
-
+        
 }
